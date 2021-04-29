@@ -1,0 +1,33 @@
+
+<!-- A1
+uno: crear el models/empleado.model.ts las propiedades
+dos: generar los componentes formulario y ListaEmpleados
+tres: instalar el npm install bootstrap
+cuatro: en angular.json incluir sobre el css el "node_modules/bootstrap/dist/css/bootstrap.min.css", 
+cinco: definir las rutas => app-routing.module.ts A2-->
+<!-- comenzamos con el formulario vamos a definir la estructura 
+de los dos tipos de formularios que tenemos vamos a utilizar el model
+por lo tanto en => app.module.ts se importa la libreria ReactiveFormsModule A3  -->
+<!-- vo a crear una instancia en el => formulario.ts A4 -->
+<!-- de ahi en generando todo en el html => mormulario.html A5 
+maquetando todo en el container del html => app.hmtl A6-->
+<!-- B1 VALIDACIONES -->
+<!-- tenemos que ir al ts del formulario => formulario.ts B2 -->
+<!-- C1 trabajando con servicios ...Guardando =>empleados.service.ts C1 -->
+
+<!-- D1 Para la parte dela lista....necesitamos recuperar todo lo disponible
+para ello nos vamo sal servicio y creamo el metodo getAll() =>empleados.service.ts  D1-->
+
+
+
+<!-- A6 -->
+<div class="container">
+  <div class="menu">
+    <!-- C5 a;adiendo rutas -->
+    <button class="btn btn-primary mr-2" [routerLink]="['/new']">Formulario</button>
+    <button class="btn btn-primary " [routerLink]="['/list']">Lista Empleados </button>
+  </div>
+  <router-outlet></router-outlet>
+</div>
+
+

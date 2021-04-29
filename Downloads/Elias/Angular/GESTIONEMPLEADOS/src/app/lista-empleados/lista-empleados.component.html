@@ -1,0 +1,13 @@
+<!-- D4 luego generando en el css -->
+<div class="empleados">
+    <div class="empleado" *ngFor="let emp of empleados">
+        <h4>{{emp.nombre}}  {{emp.apellidos}}</h4>
+        <img [src]="emp.imagen" alt="">
+        <ul>
+            <li>{{emp.email}}</li>
+            <li>{{emp.password}}</li>
+            <li>{{emp.edad}}</li>
+            <li>{{emp.departamento}}</li>
+        </ul>
+    </div>
+</div>
